@@ -5,11 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class Main2 {
+public class Main {
     public static void main(String[] args) {
-        //Has de fer el mateix que en el punt anterior, però ara, el mètode ha de retornar una llista
-        // amb els Strings que a més de contenir la lletra ‘o’ també tenen més de 5 lletres. Imprimeix el resultat.
-
 
         List<String> lista = Arrays.asList("Pedro","Juan","Miguel","Maria","Nicolasa");
 

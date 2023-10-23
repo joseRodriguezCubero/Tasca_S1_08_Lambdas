@@ -1,11 +1,10 @@
 package n1exercici7;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 
 import static java.util.Comparator.*;
 
-public class Main7 {
+public class Main {
     public static void main(String[] args) {
         ArrayList<Object> lista = new ArrayList<>();
         lista.add(5);
@@ -13,8 +12,6 @@ public class Main7 {
         lista.add("Juan");
         lista.add("Zacarias");
         lista.add(53);
-
-
 
         lista.stream()
                 .filter(s -> s instanceof String)
