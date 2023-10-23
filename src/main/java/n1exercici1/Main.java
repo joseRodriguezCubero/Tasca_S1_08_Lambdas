@@ -9,9 +9,9 @@ import java.util.function.Predicate;
 public class Main {
     public static void main(String[] args) {
 
-        List<String> lista = Arrays.asList("Pedro","Juan","Miguel","Maria","Nicolasa");
+        List<String> list = Arrays.asList("Pedro","Juan","Miguel","Maria","Nicolasa");
 
-        var list2 = listOfStringsWithO(lista, p -> p.contains("o"));
+        var list2 = listOfStringsWithO(list, p -> p.contains("o"));
 
         for (String s: list2) {
             System.out.println(s);
