@@ -2,16 +2,18 @@ package n2exercici3;
 
 public class Main {
     public static void main(String[] args) {
-        //Crea una Functional Interface que contingui un mètode anomenat operacio().
-        // Aquest mètode ha de retornar un float. Injecta a la interfície creada mitjançant una lambda,
-        // el cos del mètode, de manera que es pugui transformar l’operació amb una suma, una resta,
-        // una multiplicació i una divisió.
 
+        Operacion add = (a, b) -> (float) (a + b);
+        Operacion minus = (a, b) -> (float) (a - b);
+        Operacion multipli = (a, b) -> (float) (a * b);
+        Operacion divide = (a, b) -> (float) (a / b);
 
-    Operacion operacion = (c1,c2,c3) -> (c2 == '/' ? : c1/c2)
-
-
-
-
+        System.out.println("Suma: " + add.operacio(5, 3));
+        System.out.println("Resta: " + minus.operacio(5, 3));
+        System.out.println("Multiplicación: " + multipli.operacio(5, 3));
+        System.out.println("División: " + divide.operacio(5, 3));
     }
 }
+
+
+
