@@ -1,29 +1,19 @@
 package n1exercici1;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Predicate;
 
 public class Main {
     public static void main(String[] args) {
 
         List<String> list = Arrays.asList("Pedro","Juan","Miguel","Maria","Nicolasa");
-
-        var list2 = listOfStringsWithO(list, p -> p.contains("o"));
-
-        for (String s: list2) {
-            System.out.println(s);
-        }
+        listOfStringsWithO(list);
 
     }
-    private static List<String> listOfStringsWithO(List<String> list, Predicate<String> predicate){
-        List<String> list2 = new ArrayList<>();
-        for (String s:list) {
-            if (predicate.test(s)) {
-                list2.add(s);
-            }
-        }
-       return list2;
+    private static void listOfStringsWithO(List<String> list){
+        list.stream()
+                .filter (s -> s.toLowerCase().contains("o"))
+                .forEach(s -> System.out.print(s + " "));
     }
 }
+

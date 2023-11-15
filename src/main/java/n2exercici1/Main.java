@@ -9,9 +9,8 @@ public class Main {
 
         List<String> list = Arrays.asList("Pedro","Juan","Miguel","Maria","Nicolasa","Ana","Antonia");
 
-          list.stream().
-               filter(s -> s.startsWith("A")).
-               filter(s -> s.length()==3).
-               forEach(System.out::println);
+        list.stream().
+                filter(s -> s.startsWith("A") && s.length()==3).
+                forEach(System.out::println);
     }
 }
